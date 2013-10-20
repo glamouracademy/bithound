@@ -16,8 +16,8 @@ call
 @mtgoxUSD = find
 
 def display
-  puts "latest_trade = "+ @mtgoxUSD.fetch("latest_trade").to_s
-  puts "close = " + @mtgoxUSD.fetch("close").to_s
+  puts "mtgoxUSD latest_trade = "+ @mtgoxUSD.fetch("latest_trade").to_s
+  puts "mtgoxUSD close = " + @mtgoxUSD.fetch("close").to_s
 end
 
 display
