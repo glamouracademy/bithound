@@ -9,15 +9,15 @@ def call
 end
   
 def find
-  @parsed_body.detect {|market| market["symbol"] == "mtgoxUSD"}
+  @parsed_body.detect {|market| market["symbol"] == "okcoinCNY"}
 end
 
 call
-@mtgoxUSD = find
+@okcoinCNY = find
 
 def display
-  puts "mtgoxUSD latest_trade = "+ @mtgoxUSD.fetch("latest_trade").to_s
-  puts "mtgoxUSD close = " + @mtgoxUSD.fetch("close").to_s
+  puts "okcoinCNY latest_trade = "+ @okcoinCNY.fetch("latest_trade").to_s
+  puts "okcoinCNY close = " + @okcoinCNY.fetch("close").to_s
 end
 
 display
